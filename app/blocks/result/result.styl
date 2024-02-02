@@ -1,0 +1,137 @@
+.result
+    position fixed
+    top 0
+    left 0
+    width 100%
+    height 100vh
+    background-color $c-white
+    background-size cover
+    display none
+    z-index 5
+    +below(801px)
+        height 100%
+        overflow scroll
+
+    &.is-active
+        display block
+
+    &__content
+        display flex
+        flex-direction column
+        justify-content space-between
+        height 100vh
+        align-items center
+        position relative
+        margin 0 auto
+        z-index 1
+
+    &__wrap
+        position relative
+        display flex
+        flex-direction row
+        justify-content center
+        background-color $c-pink
+        margin w(100) w(0)
+        padding-left w(50)
+        padding-bottom w(45)
+        +below(801px)
+            margin wm(50) wm(30)
+            padding-left wm(0)
+            padding-bottom wm(45)
+            flex-direction column
+            align-items center
+
+    &__img
+        position absolute
+        top w(-30)
+        left w(50)
+        width w(300)
+        img
+            width 100%
+        +below(801px)
+            top wm(-30)
+            left wm(0)
+            width wm(300)
+            position relative
+
+    &__chapter
+        color $c-white
+        text-align center
+        font-family $ff-Montserrat
+        font-size w(44)
+        font-weight 700
+        text-transform uppercase
+        +below(801px)
+            font-size wm(44)
+
+    &__text
+        margin-top w(15)
+        font-family $ff-Montserrat
+        color $c-white
+        font-size w(20)
+        font-weight 700
+        line-height normal
+        text-transform uppercase
+        text-align center
+        +below(801px)
+            margin-top wm(15)
+            font-size wm(20)
+
+    &__answer
+        width 60%
+        margin-left w(150)
+        padding w(20) w(60)
+        display flex
+        flex-direction column
+        justify-content center
+        +below(801px)
+            margin-left wm(0)
+            padding w(20) w(60)
+
+    &__title
+        padding w(15) 0
+        color $c-white
+        font-family $ff-Montserrat-Medium
+        font-size w(18)
+        font-weight 500
+        line-height w(32)
+        text-align left
+        text-transform uppercase
+        +below(801px)
+            padding wm(15) 0
+            font-size wm(18)
+            line-height wm(32)
+
+
+    &__button
+        color $c-white
+        text-align center
+        align-self center
+        font-family $ff-Montserrat
+        font-size w(16)
+        font-weight 700
+        border 1px solid $c-white
+        margin-top w(15)
+        padding w(10) w(15)
+        transition .5s
+        &:hover
+            background-color $c-blue
+            transition .5s
+        +below(801px)
+            font-size wm(16)
+            margin-top wm(15)
+            padding wm(10) wm(15)
+
+    &__social-network
+        text-align center
+
+    &__network
+        &:nth-child(2)
+            margin 0 w(10) 0 w(10)
+            +below(1200px)
+                margin 0 wm(15) 0 wm(15)
+        img
+            width w(30)
+            +below(1200px)
+                width 10%
+

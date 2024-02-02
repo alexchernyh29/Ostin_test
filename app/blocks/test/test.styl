@@ -1,0 +1,116 @@
+.test
+    position relative
+    background-color $c-blue
+    height 100%
+    padding w(90) w(32) w(90) w(80)
+    +below(2560px)
+        height 100vh
+    +below(801px)
+        height 100vh
+        overflow scroll
+        padding wm(45) wm(30)
+
+    &__wrap
+        position relative
+        display flex
+        flex-flow column
+        border 1px solid $c-white
+        padding w(50) w(95)
+        +below(801px)
+            padding wm(30) wm(25)
+
+    &__question
+        display flex
+        flex-direction row
+        height w(90)
+        +below(801px)
+            height wm(180)
+
+    &__title
+        font-family $ff-Montserrat-Medium
+        font-size w(32)
+        font-weight 500
+        line-height w(40)
+        text-transform uppercase
+        padding-left w(10)
+        color $c-white
+        +below(801px)
+            font-size wm(34)
+            line-height wm(47)
+            padding-left wm(20)
+
+    &__counter
+        color $c-white
+        font-family $ff-Montserrat
+        font-size w(20)
+        line-height w(30)
+        font-weight 400
+        +below(801px)
+            font-size wm(40)
+            line-height wm(41)
+
+    &__list
+        position relative
+        height 100%
+        display flex
+        flex-flow column
+        margin-top w(50)
+        margin-right w(50)
+        +below(801px)
+            margin-top wm(20)
+            margin-right wm(0)
+    
+    &__item
+        cursor pointer
+        box-sizing border-box
+        border 1px solid $c-white
+        padding w(10) w(15)
+        max-width w(795)
+        height w(65)
+        margin-top w(25)
+        transition .5s
+        &:first-child
+            margin-top w(0)
+        &:hover
+            transition .5s
+            background-color $c-pink
+        
+        +below(801px)
+            padding wm(18)
+            max-width 100%
+            height wm(180)
+            margin-top wm(35)
+            &:hover
+                background-color $c-blue
+
+    &__sign
+        position relative
+        display flex
+        flex-direction row
+        justify-content flex-start
+        align-items flex-start
+        height 100%
+
+        span
+            color $c-white
+            font-family $ff-Montserrat
+            font-size w(14)
+            font-weight 700
+            +below(801px)
+                font-size wm(28)
+                line-height wm(28)
+       
+    &__text
+        font-family $ff-Montserrat
+        color $c-white
+        font-size w(20)
+        font-weight 400
+        line-height w(29)
+        text-transform uppercase
+        padding-left w(10)
+        align-self center
+        +below(801px)
+            padding-left wm(15)
+            font-size wm(30)
+            line-height wm(37)
+            align-self flex-start

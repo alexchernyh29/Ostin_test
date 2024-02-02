@@ -1,0 +1,21 @@
+mixin test()
+
+    +b('section').test()
+        +e.wrap
+            +e.question
+                +e.counter 0<span>1</span>
+                +e('p').title Что для вас главное в выборе подарка?
+            +e('ul').list
+                +e('li').item(data-id='А')
+                    +e.sign
+                        span 01
+                        +e('p').text._1 Лучший подарок тот, что сделан своими руками
+                +e('li').item(data-id='Б')
+                    +e.sign
+                        span 02
+                        +e('p').text._2 Думаю о привычках и увлечениях того, кому буду дарить
+                +e('li').item(data-id='B')
+                    +e.sign
+                        span 03
+                        +e('p').text._3 Дарю только то, что нравится мне
+                
