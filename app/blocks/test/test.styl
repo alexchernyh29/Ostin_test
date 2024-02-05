@@ -2,7 +2,7 @@
     position relative
     background-color $c-blue
     height 100%
-    padding w(90) w(32) w(90) w(80)
+    padding w(90) w(80)
     +below(2560px)
         height 100vh
     +below(801px)
@@ -54,7 +54,7 @@
         height 100%
         display flex
         flex-flow column
-        margin-top w(50)
+        margin-top w(20)
         margin-right w(50)
         +below(801px)
             margin-top wm(20)
@@ -71,17 +71,12 @@
         transition .5s
         &:first-child
             margin-top w(0)
-        &:hover
-            transition .5s
-            background-color $c-pink
         
         +below(801px)
             padding wm(18)
             max-width 100%
             height wm(180)
             margin-top wm(35)
-            &:hover
-                background-color $c-blue
 
     &__sign
         position relative
@@ -114,3 +109,11 @@
             font-size wm(30)
             line-height wm(37)
             align-self flex-start
+
+.pink {
+    background-color $c-pink !important
+}
+.active-hover{
+    background-color $c-pink
+    transition .5s
+}
