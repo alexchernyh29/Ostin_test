@@ -69,6 +69,9 @@
         height w(65)
         margin-top w(25)
         transition .5s
+        display flex
+        flex-direction row
+        align-items center
         &:first-child
             margin-top w(0)
         
@@ -84,19 +87,15 @@
         flex-direction row
         justify-content flex-start
         align-items flex-start
-        height 100%
 
         span
             color $c-white
             font-family $ff-Montserrat
             font-weight 700
-            font-size w(18)
-            line-height w(18)
-            align-self center
+            font-size w(14)
             +below(801px)
                 font-size wm(28)
                 line-height wm(28)
-                align-self flex-start
        
     &__text
         font-family $ff-Montserrat
